@@ -28,6 +28,8 @@ main {
 h1, h2, h3 {
     font-weight: 900;
     margin: 2rem 0;
+    line-height: 1.2;
+
 }
 
 h1 {
@@ -62,7 +64,13 @@ a {
         background-image: url('../img/header_bg.svg');
         background-position: top right;
         background-repeat: no-repeat;
-        background-size: 800px;
+        background-size: 550px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        background-size: 900px;
     }
 }
 
@@ -76,13 +84,13 @@ a {
 }
 
 .hedaer__logo, .img {
-    width: 150px;
+    width: 100px;
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .hedaer__logo, .img {
-
+        width: 150px;
         margin: 0;
     }
 }
@@ -103,4 +111,50 @@ a {
         color: var(--blanco);
     }
 
+}
+
+.header__grid {
+    display: grid;
+}
+
+@media (min-width: 768px) {
+    .header__grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.boton {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.boton:hover{
+    background-color: #4e1b8c;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        margin: 0 0 100px 0;
+    }
+}
+
+.header_imagen, .img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.descripcion__grid{
+    display: grid;
+}
+
+@media (min-width: 768px){
+  .descripcion__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
