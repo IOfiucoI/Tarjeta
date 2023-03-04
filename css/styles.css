@@ -280,7 +280,7 @@ a {
     color: var(--blanco);
     font-size: 2rem;
     padding: 1rem 0 3rem 0;
-    border-bottom: 1px solid rgba(86, 0, 89, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .seguridad__texto:first-letter {
