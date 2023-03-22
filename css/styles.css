@@ -292,3 +292,90 @@ a {
     border-bottom: 0;
 
 }
+
+@media (min-width: 768px) {
+    .comisiones__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        align-items: center;
+    }
+}
+
+.testimoniales__titulo {
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0;
+}
+
+.comisiones__imagen {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+    .comisiones__imagen {
+        width: 450px;
+        height: 550px;
+    }
+}
+
+.testimoniales {
+    background-color: var(--primario);
+}
+
+.testimoniales__titulo {
+    padding: 5rem;
+}
+
+.testimoniales__grid {
+    display: grid;
+    gap: 3rem;
+    padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+    .testimoniales__grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+.testimoniales__caja {
+    padding: 3rem;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    box-shadow: 1px 4px 20px 0 var(--negro);
+    position: relative;
+}
+
+.testimoniales__texto{
+    padding-left: 2rem;
+}
+
+.testimoniales__texto::before{
+    content:' " ';
+    font-size: 7rem;
+    left: 14px;
+    top: -2.5px;
+    opacity: .2;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+}
+
+.testimoniales__nombre{
+    text-align: right;
+    color: var(--primario);
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+}
+
+.footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 2.5rem 0;
+}
